@@ -13,7 +13,7 @@ jobs:
         uses: nikitasavinov/checkstyle-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: 'Checkstyle'
+          reporter: 'github-pr-check'
           tool_name: 'Checkstyle'
           fail_on_error: true
           checkstyle_config: https://raw.githubusercontent.com/javastartpl/checkstyle/master/checkstyle.xml 
